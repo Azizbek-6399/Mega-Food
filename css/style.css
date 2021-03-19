@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'runik';
+  src: url("../fonts/Rubik/static/Rubik-Black.ttf") format(truetype); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'runik',sans-serif; }
+
+nav .navbar-brand {
+  width: 15%; }
+  nav .navbar-brand img {
+    width: 100%; }
+nav .collapse {
+  display: flex;
+  justify-content: space-between; }
+  nav .collapse .navbar-nav li {
+    border-bottom: 4px solid transparent;
+    margin: 0 10px;
+    transition: .5s; }
+    nav .collapse .navbar-nav li a {
+      font-size: 14px;
+      font-weight: bold;
+      color: #27272F; }
+    nav .collapse .navbar-nav li:hover {
+      border-bottom: 4px solid #8BA73B; }
+  nav .collapse .right a {
+    text-decoration: none; }
+  nav .collapse .right .tel {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #8BA73B;
+    box-shadow: 0px 4px 24px 0px #000000 25%;
+    border-radius: 20px;
+    padding: 5px 12px;
+    margin-left: 8px; }
+    nav .collapse .right .tel span img {
+      height: 19px; }
+
+@media (max-width: 768px) {
+  nav .navbar-brand {
+    width: 25%; }
+    nav .navbar-brand img {
+      width: 100%; }
+  nav .collapse {
+    display: block; }
+    nav .collapse .right .tel {
+      display: block;
+      margin-top: 20px; } }
+header {
+  width: 100%;
+  height: 370px;
+  background: #4D8526; }
+  header .order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    top: 40%; }
+    header .order .first {
+      font-size: 40px; }
+    header .order .second {
+      font-size: 16px; }
+    header .order a {
+      color: #8ba73b;
+      border-radius: 20px;
+      width: 150px;
+      font-size: 18px;
+      font-weight: 500; }
+      header .order a img {
+        float: right; }
+  header .yashik {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    background: linear-gradient(#4e8526b2, #4e8526b2), url("../img/yashik.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    header .yashik {
+      width: 200px;
+      position: absolute !important;
+      bottom: 0px;
+      right: 0;
+      display: none; } }
+@media (max-width: 530px) {
+  header .order .first {
+    font-size: 30px; } }
+@media (max-width: 406px) {
+  header .order {
+    top: 50%; }
+    header .order .first {
+      font-size: 25px; }
+    header .order .br {
+      display: none; }
+    header .order a {
+      margin-top: 20px; } }
+.section-1 .title {
+  width: 310px;
+  font: 700 24px 'runik';
+  border-bottom: 4px solid #8BA73B; }
+.section-1 .cardd {
+  width: 100%;
+  height: 229px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.8s; }
+  .section-1 .cardd .text {
+    color: #4D8526;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px; }
+  .section-1 .cardd:hover {
+    box-shadow: 5px 5px 20px 0px #000000 10%;
+    background: #4e85267c; }
+    .section-1 .cardd:hover .text {
+      color: white !important; }
+.section-1 .col-sm-12 {
+  margin-top: 15px; }
+
+@media (max-width: 768px) {
+  .section-1 .col-sm-12 {
+    margin-top: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
